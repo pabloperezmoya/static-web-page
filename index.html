@@ -57,7 +57,7 @@
             var j = JSON.parse(this.responseText);
             var ip = j[0]['field1']
             document.getElementById("ip").innerText = ip
-            //document.getElementById("foot").innerHTML = `<a href='http://${ip}:4747'>Click here to redirect to the IP Cam</a>`;
+            document.getElementById("foot").innerHTML = `<a href='http://${ip}:4747'>Click here to redirect to the IP Cam</a>`;
             document.getElementById("message").innerText = "The IP was copied in your clipboard"
             
             navigator.clipboard.writeText(`http://${ip}:4747`)
